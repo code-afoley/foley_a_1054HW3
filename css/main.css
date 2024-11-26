@@ -1,0 +1,112 @@
+body {
+    background-color: whitesmoke;
+    font-size: 21px;
+    font-family: 'Sofia', sans-serif;
+    color: #4B6E94;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+header {
+  
+    background-color: #4B6E94;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    background-image: url(../images/snowflake_closeup.jpg);
+}
+
+header > h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 50px;
+}
+
+section {
+    width: 400px;
+    border: 8px double #4B6E94;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+
+}
+
+section h2 {
+    border-bottom: 2px solid #4B6E94;
+}
+
+section:first-of-type {
+    color: blue;
+}
+
+section:last-of-type {
+    color: orange;
+}
+
+section:last-of-type h2 {
+    color: orange;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section:hover {
+    background-color: #fff49b;
+} 
+
+input[type="checkbox"]:checked + span::after {
+    content: "☃️";
+    font-size: 20px;
+    animation: fadeIn 0.24s;
+    margin-left: 10px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.todo li:nth-last-child(odd) {
+    background-color: aliceblue;
+}
+
+.inprogress li:nth-last-child(odd) {
+    background-color: aliceblue;
+}
+
+.done li:nth-last-child(odd) {
+    background-color: aliceblue;
+}
+
+
+#todo input[type="checkbox"]:checked + span {
+        text-decoration: line-through;
+        background-color: grey;
+}
+    
+#inprogress input[type="checkbox"]:checked + span {
+        text-decoration: line-through;
+        background-color: grey;
+}
+    
+#done input[type="checkbox"]:checked +span {
+        text-decoration: line-through;
+        background-color: grey;
+}
